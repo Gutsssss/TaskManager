@@ -49,6 +49,7 @@ import {mapActions} from 'vuex'
     margin: 0 auto;
     border-radius: 10px;
     overflow-wrap: break-word;
+    text-align: center;
 }
 .item-title {
     font-size: 40px;

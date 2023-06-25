@@ -7,7 +7,6 @@
 
 <script>
 import {mapActions} from 'vuex'
-
     export default {
         data() {
             return {
@@ -33,7 +32,6 @@ import {mapActions} from 'vuex'
 <style scoped>
 .taskInput {
     display: flex;
-    margin: 0 auto;
     justify-content: center;
     align-items: center;
 }

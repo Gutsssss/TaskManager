@@ -1,29 +1,27 @@
 <template>
-  <div>
-  <TaskInput/>
-  <TaskList/>
-  </div>
+  <nav>
+  <ul>
+  <li><router-link class="link" to="/" >Home</router-link></li>
+  <li><router-link to="/tasks" >Tasks</router-link></li>
+  </ul>
+  </nav>
+  <router-view/>
 </template>
 
-<script>
-import TaskInput from './components/TaskInput.vue';
-import TaskList from './components/TaskList.vue';
-export default {
-  name: 'App',
-  components: {
-    TaskInput,
-    TaskList,
-  }
+<style scoped>
+ * {
+  margin: 0;
+ }
+nav {
+  background-color: teal;
+  font-size: 40px;
+  display: flex;
 }
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
 </style>

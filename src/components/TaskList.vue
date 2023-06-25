@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Task list</h1>
     <ul v-for="task in getTasks" :key="task.id">
       <li><TaskItem :task="task" /></li>
     </ul>
