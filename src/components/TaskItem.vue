@@ -1,7 +1,8 @@
 <template>
-    <div>
-        <h1 v-if="!editing">{{ task.title }}</h1>
-        <input 
+    <div class="item">
+        <p class="item-title" v-if="!editing">{{ task.title }}</p>
+        <input
+        class="item-input"
         v-bind:value="title"
         @change="changeTitle"
          v-else type="text"
@@ -41,6 +42,31 @@ import {mapActions} from 'vuex'
     }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.item {
+    border: 2px solid teal;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+.item-title {
+    font-size: 40px;
+}
+button {
+    height: 40px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: teal;
+    font-size: 20px;
+}
+.item-input {
+    height: 30px;
+    border-radius: 10px;
+    font-size: 24px;
+    margin: 10px;
+    padding: 5px;
+}
 </style>

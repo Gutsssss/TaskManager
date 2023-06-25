@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="taskInput">
         <input @change="titelChange" v-bind:value="title" type="text">
-        <button @click="addTaskI()">add</button>
+        <button @click="addTaskI()">Add</button>
         </div>
 </template>
 
@@ -30,6 +30,26 @@ import {mapActions} from 'vuex'
     }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.taskInput {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    width: 300px;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 24px;
+}
+button {
+    height: 40px;
+    width: 100px;
+    margin: 10px;
+    color: white;
+    background-color: teal;
+    border-radius: 10px;
+    font-size: 24px;
+}
 </style>
